@@ -38,11 +38,7 @@ f1=loadImage("f1.jpg");
 f2=loadImage("f2.jpg");
 f3=loadImage("f3.jpg");
 f4=loadImage("f4.jpg");
-//miFuente = createFont("FootlightMTLight-48.ttf", 32);
-//fuente1= loadFont("FootlightMTLight-48.vlw");
-/*fuente2= createFont("gooddog.ttf",60);
-fuente3= loadFont("fuente3.vlw");
-/**/
+//pos
 posX = 800;
 posY = 740;
 posX1 = -200;
@@ -72,30 +68,14 @@ text(txt2,posX1,270);
  if (posX1<=width/2) {
     posX1 ++; 
  }
-  if (frameCount > 710 && frameCount < 1300) {
-    // Mostrar la imagen
+  if (frameCount > 710 && frameCount < 1300) {    
     image(f1, 0, 0, 640, 480);
-    
-    // Configurar el tamaño y color del texto
     textSize(textSizeincremento);
     fill(225, 245, 75);
-    
-    // Posicionar el texto en el centro
     textAlign(CENTER, CENTER);
     text(txt3, width/2, height/2);
-    
-    // Incrementar el tamaño del texto de manera sinusoidal
-   textSizeincremento += sin(frameCount * 0.2) / 2;
+ textSizeincremento += sin(frameCount * 0.2) / 2;
 
-  
-/*if (frameCount >710 && frameCount <1300) { 
-image(f1,0,0,640,480);
-//textFont(fuente3);
-textSize(textSizeincremento);
-fill(225,245,75);
-text(txt3,width/2,height/2);
-textSizeincremento+= sin(frameCount +0.02) /2;
-/*/
 } else  if (frameCount >1400 && frameCount <1800){
     
 image(f2,0,0,640,480);
